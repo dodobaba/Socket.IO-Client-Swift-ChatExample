@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test02" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KF-Ua-r4p">
+                                <rect key="frame" x="277" y="188" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="mybutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0K-dF-S3Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DX3-kj-DFX">
+                                <rect key="frame" x="137" y="243" width="326" height="298"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tao-Yf-r8d">
+                                <rect key="frame" x="165" y="144" width="269" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9KF-Ua-r4p" firstAttribute="centerX" secondItem="DX3-kj-DFX" secondAttribute="centerX" id="Iec-Iv-zJ2"/>
+                            <constraint firstItem="9KF-Ua-r4p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RXL-rJ-mQb"/>
+                            <constraint firstItem="9KF-Ua-r4p" firstAttribute="top" secondItem="Tao-Yf-r8d" secondAttribute="bottom" constant="14" id="dHh-Qg-pd9"/>
+                            <constraint firstItem="Tao-Yf-r8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gto-zx-iwX"/>
+                            <constraint firstItem="DX3-kj-DFX" firstAttribute="top" secondItem="9KF-Ua-r4p" secondAttribute="bottom" constant="25" id="kJ6-RL-Ncu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myinput" destination="Tao-Yf-r8d" id="Ihm-k3-ymR"/>
+                        <outlet property="mylable" destination="DX3-kj-DFX" id="cAG-hR-ipD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="357"/>
+        </scene>
+    </scenes>
+</document>
